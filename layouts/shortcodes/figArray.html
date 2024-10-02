@@ -1,0 +1,9 @@
+<div class="figure-array">
+    {{ range .Params.images }}
+      <figure>
+        <img src="{{ .src }}" alt="{{ .alt }}">
+        <figcaption>{{ .caption }}</figcaption>
+      </figure>
+    {{ end }}
+  </div>
+  
